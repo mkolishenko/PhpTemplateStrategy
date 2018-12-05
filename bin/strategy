@@ -13,16 +13,6 @@ print_r($sortedarray);
 $sortedarray = $objforsort->sort('ASC');
 print_r($sortedarray);
 
-//$objforsort = new DescSorter($sortedarray);
-//$sortedarray = $objforsort->sort($sortedarray);
-
-//Echo "1234";
-//sprintf("S0",$sortedarray);
-//foreach ($sortedarray as $item)
-//{
-// arsort($sortedarray);
-
-//}
 
 
 

@@ -9,7 +9,7 @@
 namespace App;
 
 
-class AscSorter implements SorterInterface
+final class AscSorter implements SorterInterface
 {
     public $sortedarray;
 

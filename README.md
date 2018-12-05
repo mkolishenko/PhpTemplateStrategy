@@ -1,4 +1,4 @@
-Default Project
+PhoTemplateStrategy
 ===============
 
 This is an example of usage Strategy template at PHP projects. 
