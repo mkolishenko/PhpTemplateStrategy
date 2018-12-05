@@ -11,9 +11,17 @@ namespace App;
 
 class AscSorter implements SorterInterface
 {
+    public $sortedarray;
+
+    public function __construct($incomearray)
+    {
+        $this->sortedarray = $incomearray;
+    }
     public function sort($sortedarray)
     {
-        return asort($sortedarray);
+        if (asort($this->sortedarray)){
+            return $this->sortedarray;
+        }
     }
 
 }

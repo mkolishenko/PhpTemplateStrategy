@@ -22,9 +22,11 @@ class MainSort
     public function sort ($sortorder)
     {
         if($sortorder == 'ASC'){
-            return new AscSorter($this->sortedarray);
+            $arrayobject = new AscSorter($this->sortedarray);
+            return $arrayobject->sort($sortorder);
         }
-        return new DescSorter($this->sortedarray);
+        $arrayobject = new DescSorter($this->sortedarray);
+        return $arrayobject->sort($sortorder);
     }
 
 

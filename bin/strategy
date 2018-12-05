@@ -1,6 +1,28 @@
 #!/usr/bin/env php
 <?php
 
+namespace App;
 require_once __DIR__ . '/../vendor/autoload.php';
+
+
+$sortedarray = [1=>12, 2=>708, 3=>45, 4=>227, 5=>6];
+
+$objforsort = new MainSort($sortedarray);
+$sortedarray = $objforsort->sort('DESC');
+print_r($sortedarray);
+$sortedarray = $objforsort->sort('ASC');
+print_r($sortedarray);
+
+//$objforsort = new DescSorter($sortedarray);
+//$sortedarray = $objforsort->sort($sortedarray);
+
+//Echo "1234";
+//sprintf("S0",$sortedarray);
+//foreach ($sortedarray as $item)
+//{
+// arsort($sortedarray);
+
+//}
+
 
 

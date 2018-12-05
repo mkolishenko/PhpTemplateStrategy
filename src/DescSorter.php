@@ -9,11 +9,19 @@
 namespace App;
 
 
-class DescSorter implements SorterInterface
+final class DescSorter implements SorterInterface
 {
+    public $sortedarray;
+
+    public function __construct($incomearray)
+    {
+        $this->sortedarray = $incomearray;
+    }
     public function sort($sortedarray)
     {
-        return arsort($sortedarray);
+        if (arsort($this->sortedarray)){
+            return $this->sortedarray;
+        }
     }
 
 }
