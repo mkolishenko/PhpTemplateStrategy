@@ -7,21 +7,19 @@
  */
 
 namespace App;
-
-
 final class DescSorter implements SorterInterface
 {
-    public $sortedarray;
-
+    public $sortedarray = [];
     public function __construct($incomearray)
     {
         $this->sortedarray = $incomearray;
     }
     public function sort($sortedarray)
     {
-        if (arsort($this->sortedarray)){
+        if (is_array($sortedarray)){
+            arsort($this->sortedarray);
             return $this->sortedarray;
         }
+        return false;
     }
-
 }

@@ -5,14 +5,13 @@ namespace App;
 require_once __DIR__ . '/../vendor/autoload.php';
 
 
-$sortedarray = [1=>12, 2=>708, 3=>45, 4=>227, 5=>6];
+//$sortedarray = [1=>12, 2=>708, 3=>45, 4=>227, 5=>6];
+$sortedarray = 'sdfsdf';
 
 $objforsort = new MainSort($sortedarray);
 $sortedarray = $objforsort->sort('DESC');
 print_r($sortedarray);
 $sortedarray = $objforsort->sort('ASC');
 print_r($sortedarray);
-
-
 
 
