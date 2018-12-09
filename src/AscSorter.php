@@ -14,7 +14,7 @@ namespace App;
 final class AscSorter implements SorterInterface
 {
     /**
-     * @var array values, store sorted values
+     * @var array, store sorted values
      */
     public $sortedarray = [];
 

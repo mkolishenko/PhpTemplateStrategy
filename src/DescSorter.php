@@ -15,7 +15,7 @@ namespace App;
 final class DescSorter implements SorterInterface
 {
     /**
-     * @var array values, store sorted values
+     * @var array, store sorted values
      */
     public $sortedarray = [];
 
@@ -23,6 +23,11 @@ final class DescSorter implements SorterInterface
     {
         $this->sortedarray = $incomearray;
     }
+
+    /**
+     * @param array $sortedarray - initial data for sort
+     * @return array - sorted data
+     */
     public function sort(array $sortedarray) :array
     {
         if (is_array($sortedarray)){

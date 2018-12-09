@@ -8,18 +8,31 @@
 
 namespace App;
 
-
+/**
+ * Class MainSort - realize Strategy and NULL-object
+ * @package App
+ */
 class MainSort
 {
+    /**
+     * @var array, empty for results
+     */
     private $sortedarray = [];
-    public $rez = [1,2,3,4,5];
+
     public function __construct($sortedarray)
     {
         $this ->sortedarray = $sortedarray;
     }
-    public function sort ($sortorder)
+
+    /**
+     * sort income array according to $sortorder
+     * @param string $sortorder, two options - ascending or descending, otherwise - no sort
+     * @return array
+     */
+    public function sort (string $sortorder) :array
     {
         $nullarray = new NullSort();
+
         if($sortorder == 'ASC'){
             $arrayobject = new AscSorter($this->sortedarray);
             if ($arrayobject->sort($this ->sortedarray)===false) {
