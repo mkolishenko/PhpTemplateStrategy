@@ -17,7 +17,7 @@ class NullSort implements SorterInterface
     {
         $this->sortedarray = ['Income data is not an array'];
     }
-    public function sort($sortedarray)
+    public function sort(array $sortedarray) :array
     {
         return $this->sortedarray;
     }

@@ -25,7 +25,7 @@ class MainSort
             if ($arrayobject->sort($this ->sortedarray)===false) {
                 return $nullarray->sort($this ->sortedarray);
             }
-            //print_r(asort($this->sortedarray));
+
             return $arrayobject->sort($this ->sortedarray);
         }else {
             $arrayobject = new DescSorter($this->sortedarray);

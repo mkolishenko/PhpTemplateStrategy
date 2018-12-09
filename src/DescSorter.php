@@ -7,14 +7,23 @@
  */
 
 namespace App;
+
+/**
+ * Class DescSorter - for Descending sort
+ * @package App
+ */
 final class DescSorter implements SorterInterface
 {
+    /**
+     * @var array values, store sorted values
+     */
     public $sortedarray = [];
+
     public function __construct($incomearray)
     {
         $this->sortedarray = $incomearray;
     }
-    public function sort($sortedarray)
+    public function sort(array $sortedarray) :array
     {
         if (is_array($sortedarray)){
             arsort($this->sortedarray);

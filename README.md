@@ -1,5 +1,4 @@
-PhpTemplateStrategy
-===============
+PhpTemplateStrategy===============
 
 This is an example of usage Strategy template at PHP projects. 
 

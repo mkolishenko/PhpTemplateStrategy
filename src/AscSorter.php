@@ -7,15 +7,27 @@
  */
 
 namespace App;
-
+/**
+ * Class AscSorter - for Ascending sort
+ * @package App
+ */
 final class AscSorter implements SorterInterface
 {
+    /**
+     * @var array values, store sorted values
+     */
     public $sortedarray = [];
+
     public function __construct($incomearray)
     {
         $this->sortedarray = $incomearray;
     }
-    public function sort($sortedarray)
+
+    /**
+     * @param array $sortedarray - initial data for sort
+     * @return array - sorted data
+     */
+    public function sort(array $sortedarray):array
     {
         if (is_array($sortedarray)){
             asort($this->sortedarray);

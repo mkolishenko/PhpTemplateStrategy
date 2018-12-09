@@ -8,8 +8,11 @@
 
 namespace App;
 
-
+/**
+ * Interface SorterInterface - all classes implements this interface must have sort option
+ * @package App
+ */
 interface SorterInterface
 {
-    public function sort($sortedarray);
+    public function sort(array $sortedarray) :array ;
 }

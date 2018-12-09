@@ -7,8 +7,5 @@ composer.phar
 # PHPStorm project files
 .idea/
 
-# Mac DS_Store Files
-.DS_Store
-
 # PHP CS Fixer cache
 php_cs.cache
